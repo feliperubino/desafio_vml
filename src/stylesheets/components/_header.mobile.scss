@@ -1,0 +1,995 @@
+@media only screen and (max-width: 1023px) {
+
+	header {
+		height: 104px
+	}
+
+	header.smaller div.content {
+		animation: none
+	}
+
+	header div.sub_media div {
+		width: 100%;
+		max-width: 100%
+	}
+
+	header div.sub_media div.wrapper {
+		width: auto;
+		display: flex;
+		align-items: center;
+		min-width: 32px
+	}
+
+	header div.sub_media div.wrapper.true {
+		width: 72px
+	}
+
+	header div.content {
+		width: 100%;
+		overflow: hidden
+	}
+
+	header div.sub_media ul {
+		width: 100%;
+		justify-content: space-between;
+		align-content: center;
+		padding: 0 20px
+	}
+
+	header div.sub_media div.left {
+		max-width: 100%
+	}
+
+	header div.sub_media ul.swap {
+		flex-direction: row-reverse
+	}
+
+	header ul {
+		height: 64px
+	}
+
+	header div.left ul.primary li {
+		text-align: left;
+		padding: 0
+	}
+
+	header div.left ul li {
+		margin-right: 0;
+		padding: 0 20px;
+		font-size: 1.3em;
+		box-sizing: border-box
+	}
+
+	header div.left ul li.notifications {
+		padding: 10px 0
+	}
+
+	header div.left ul li.user.true {
+		margin-left: 20px
+	}
+
+	header div.left ul li.glyph {
+		width: auto
+	}
+
+	header div.left ul li span.glyphicons.glyphicons-bell {
+		top: 3px
+	}
+
+	header div.left ul li.logo {
+		top: 1px;
+		padding: 0;
+		height: 40px
+	}
+
+	header ul li.user span.background_color {
+		font-size: 0.7em
+	}
+
+	header div.k-animation-container,
+	header.smaller div.k-animation-container {
+		position: relative !important;
+		top: 0 !important
+	}
+
+	section.search form .k-autocomplete .k-i-loading {
+		top: 12px;
+		right: 20px
+	}
+
+	div.mobile_menu {
+		display: inline-block;
+		position: fixed;
+		top: 64px;
+		left: -90%;
+		width: 90%;
+		height: 100%;
+		background: rgba(8, 28, 36, 0.95);
+		z-index: 9999;
+		transition: ease .3s;
+		padding: 20px;
+		box-sizing: border-box
+	}
+
+	div.mobile_menu.active {
+		left: 0
+	}
+
+	div.mobile_menu ul li {
+		padding-bottom: 6px
+	}
+
+	div.mobile_menu ul li:last-of-type {
+		padding-bottom: 0
+	}
+
+	div.mobile_menu ul li a {
+		color: #fff;
+		font-size: 1.3em
+	}
+
+	div.mobile_menu ul.small {
+		margin-top: 20px
+	}
+
+	div.mobile_menu ul.small li a {
+		color: #868e91;
+		font-size: 1em
+	}
+
+	div.mobile_menu ul.primary li ul.sub_menu {
+		display: block;
+		height: auto;
+		position: relative;
+		top: 10px;
+		left: 10px;
+		transition: all 1s ease;
+		margin-bottom: 10px
+	}
+
+	div.mobile_menu ul.primary li ul.sub_menu.hide {
+		display: none
+	}
+
+	div.mobile_menu ul.primary li ul.sub_menu li a {
+		color: #868e91;
+		font-size: 0.9em
+	}
+
+	div.mobile_menu ul.sub_menu.discover {
+		left: 0
+	}
+
+	div.mobile_menu ul.sub_menu.movie {
+		left: 0
+	}
+
+	div.mobile_menu ul.sub_menu.tv {
+		left: 0
+	}
+
+	div.mobile_menu ul.sub_menu.person {
+		left: 0
+	}
+
+	main {
+		padding-top: 104px
+	}
+
+	section.search {
+		padding-left: 20px;
+		padding-right: 20px;
+		box-sizing: border-box
+	}
+
+	section.search form {
+		padding: 0
+	}
+
+	div.slim_search_results div.wrapper,
+	div.slim_search_results_header div.wrapper {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 20px
+	}
+
+	div.slim_search_results_header h2 {
+		padding-top: 30px
+	}
+
+	div.slim_search_results_header.no_data h2 {
+		margin-bottom: 60px
+	}
+
+	footer {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		height: auto;
+		background: linear-gradient(to top right, #2455a9, #00d573);
+	}
+
+	footer nav {
+		display: block;
+		padding: 0 20px;
+		box-sizing: border-box
+	}
+
+	footer nav div {
+		box-sizing: border-box;
+		width: 100%;
+		margin-right: 20px;
+		margin-bottom: 30px;
+		text-align: left;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		-ms-word-break: break-all;
+		word-break: break-all;
+		-ms-hyphens: auto;
+		-moz-hyphens: auto;
+		-webkit-hyphens: auto;
+		hyphens: auto
+	}
+
+	footer nav div.join {
+		top: 0;
+		width: 100%;
+		padding-bottom: 20px;
+		word-wrap: normal;
+		-ms-word-break: normal;
+		word-break: normal;
+		-ms-hyphens: none;
+		-moz-hyphens: none;
+		-webkit-hyphens: none;
+		hyphens: none;
+		text-align: left
+	}
+
+	footer nav div.join img {
+		display: none
+	}
+
+	footer nav a.rounded {
+		top: 0;
+		color: #235ea7
+	}
+
+	footer nav ul li,
+	nobr {
+		white-space: normal
+	}
+
+	header li.notifications div.badge {
+		top: 6px;
+		left: 18px
+	}
+
+	header li.notifications div.badge div.count {
+		font-size: 0.6em
+	}
+
+	html,
+	body {
+		min-width: 100%;
+		max-width: 100%
+	}
+
+	h2,
+	h3,
+	h4,
+	h5,
+	p {
+		padding-left: 10px;
+		padding-right: 10px
+	}
+
+	div.media {
+		margin-top: 20px;
+		margin-bottom: 20px
+	}
+
+	div.media,
+	div.sub_media {
+		width: 100%
+	}
+
+	div.media section.index {
+		float: none;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		display: block
+	}
+
+	div.media section.index div.column {
+		height: auto
+	}
+
+	div.media section.tv,
+	section.lists {
+		margin-bottom: 50px
+	}
+
+	div.media section.index div.info {
+		float: none;
+		line-height: 0.9em
+	}
+
+	div.media section.index div.info>a {
+		display: inline-block;
+		width: 100vw;
+		height: 56vw;
+		overflow: hidden
+	}
+
+	div.media section.index div.info {
+		display: block
+	}
+
+	div.media section.movie div.first {
+		position: relative;
+		top: 0
+	}
+
+	div.media section.index div.second {
+		position: relative;
+		top: 0
+	}
+
+	div.media section.index div.third {
+		position: relative;
+		top: 0
+	}
+
+	div.media section div.first h3,
+	div.media section div.first p,
+	div.media section div.second h3,
+	div.media section div.second p,
+	div.media section div.third h3,
+	div.media section div.third p {
+		max-width: 100%;
+		padding-left: 0;
+		box-sizing: border-box
+	}
+
+	div.media section div.first,
+	div.media section div.second,
+	div.media section div.third,
+	div.media section div.first img,
+	div.media section div.second img,
+	div.media section div.third img {
+		width: 100vw;
+		height: 56vw
+	}
+
+	div.media section.index div.info span {
+		display: block;
+		top: -8px;
+		left: 0;
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box
+	}
+
+	div.media section.index div.info span div.content,
+	div.media section div.second span,
+	div.media section div.third span {
+		margin-top: -48px;
+		margin-left: 0
+	}
+
+	div.index.sub_media section {
+		float: none
+	}
+
+	div.index.sub_media ul {
+		padding: 0 0 0 10px
+	}
+
+	section.lists {
+		width: 100%;
+		margin-right: 0
+	}
+
+	section.lists ul li {
+		float: none;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 4px 0 0;
+		height: 138px;
+		margin-bottom: 20px
+	}
+
+	section.lists ul li:last-of-type {
+		margin-bottom: 0
+	}
+
+	section.lists ul li h3 {
+		padding-top: 4px
+	}
+
+	section.lists ul li h3,
+	section.lists ul li p {
+		max-width: 100%;
+		white-space: wrap;
+		overflow: hidden;
+		padding-right: 6px
+	}
+
+	section.users {
+		width: 100%;
+		clear: both;
+		margin-bottom: 30px
+	}
+
+	section.join {
+		width: 100%
+	}
+
+	section.join div {
+		margin-right: 20px;
+		margin-left: 20px
+	}
+
+	section.join a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		line-height: 1.4em
+	}
+
+	footer h3 {
+		padding-left: 0;
+		padding-right: 0
+	}
+
+	footer nav {
+		width: 100%
+	}
+
+	footer.pad {
+		margin-top: 40px
+	}
+
+	footer ul.social {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		box-sizing: border-box
+	}
+
+	footer ul.social li {
+		margin-right: 10px;
+		display: inline
+	}
+
+	footer span.right {
+		display: block;
+		float: none;
+		padding: 54px 0 20px 0
+	}
+
+	footer nav ul.right {
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		text-align: center;
+		float: none
+	}
+
+	footer nav ul.right li {
+		border-right: none;
+		padding: 0 10px 8px 0;
+		display: inline-block
+	}
+
+	header div.ac_results {
+		width: 100%
+	}
+
+	div.ac_results {
+		width: 100%;
+		box-sizing: border-box
+	}
+
+	header div.ac_results div.ac_item {
+		padding: 4px 10px
+	}
+
+	div#cookie_notice {
+		padding: 10px 14px;
+		height: auto
+	}
+
+	div#cookie_notice p a.accept {
+		display: block;
+		width: auto
+	}
+
+	nav.sub_media {
+		margin-bottom: 0;
+		border-bottom: 1px solid #ccc
+	}
+
+	nav.sub_media div {
+		height: auto;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 10px 0 10px 0
+	}
+
+	nav.sub_media div li {
+		text-align: center;
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0 auto;
+		float: none
+	}
+
+	nav.sub_media div li.selected {
+		border-bottom: none
+	}
+
+	h2.category span {
+		float: none;
+		display: block
+	}
+
+	code {
+		width: 100%
+	}
+
+	div.pagination_wrapper>div.pagination {
+		margin-top: 20px
+	}
+
+	div.pagination p.left,
+	div.pagination p.right {
+		float: none;
+		display: flex;
+		flex-wrap: wrap;
+		text-align: left
+	}
+
+	div.left_graph {
+		width: 100%;
+		padding-right: 0;
+		float: none
+	}
+
+	div.right_graph {
+		width: 100%;
+		floa: none
+	}
+
+	div.fit_results {
+		padding-left: 10px;
+		padding-right: 10px
+	}
+
+	div.fit_results h3,
+	div.fit_results h4,
+	div.fit_results h3,
+	div.fit_results p {
+		padding-left: 0;
+		padding-right: 0
+	}
+
+	div.fit {
+		float: none
+	}
+
+	div.fit.third {
+		width: 100%
+	}
+
+	div.fit.fifty {
+		width: 100%
+	}
+
+	div.fit.person {
+		width: 100%
+	}
+
+	div.fit.end {
+		padding-left: 0
+	}
+
+	span.info {
+		max-width: 160px
+	}
+
+	span.info p {
+		padding-left: 0;
+		padding-right: 0
+	}
+
+	.graph {
+		padding-left: 10px;
+		padding-right: 10px
+	}
+
+	section.content ul {
+		padding-left: 10px;
+		padding-right: 10px
+	}
+
+	ul.privacy_contents {
+		margin: 0 0 30px 0
+	}
+
+	div.error_status {
+		margin: 0 10px
+	}
+
+	div.pagination span.total_results {
+		width: 100%;
+		display: block
+	}
+
+	div.media h2 span.title {
+		max-width: 78%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: inline-block
+	}
+
+	div.results.flex.results_backdrop_card div.item:nth-child(n+2) {
+		margin-top: 30px
+	}
+
+	div.item {
+		height: auto
+	}
+
+	div.item.card p.view_more {
+		position: relative;
+		padding: 10px 0 0 10px
+	}
+
+	div.item p,
+	div.item p:nth-of-type(1) {
+		width: 100%;
+		box-sizing: border-box
+	}
+
+	div.item p.meta {
+		margin-bottom: 0
+	}
+
+	div.item.poster {
+		width: 50%
+	}
+
+	div.item.backdrop {
+		width: 100%
+	}
+
+	div.item.backdrop div.image_content {
+		width: calc(100vw - 20px);
+		height: 56vw
+	}
+
+	div.item.poster div.image_content img,
+	div.no_image_holder.w160_and_h240_mobile {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		line-height: 75vw
+	}
+
+	div.item.backdrop.card div.no_image_holder.w320_and_h180_mobile {
+		position: relative;
+		left: -10px
+	}
+
+	div.item.backdrop div.image_content img {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 56vw
+	}
+
+	div.media_list {
+		float: none;
+		margin: 0 auto
+	}
+
+	div.item.poster.card div.image_content {
+		float: none
+	}
+
+	div.results.flex {
+		padding-left: 10px;
+		padding-right: 10px
+	}
+
+	div.fifty_square {
+		box-sizing: border-box;
+		width: calc(50vw - 15px)
+	}
+
+	div.results.flex div.item.profile.card {
+		width: calc(50vw - 15px)
+	}
+
+	div.results.flex div.item.profile.card div.image_content {
+		width: calc(50vw - 15px);
+		height: calc(50vw - 15px)
+	}
+
+	div.results.flex div.item.profile.card div.image_content img {
+		width: 100%;
+		height: 100%
+	}
+
+	div.results.flex div.item.profile.card div.image_content div.meta {
+		display: block
+	}
+
+	div.results.flex div.item.profile.card div.image_content a {
+		height: 100%;
+		width: 100%
+	}
+
+	div.item.profile.card p.name {
+		font-size: 0.9em
+	}
+
+	div.results.flex div.item.profile.card div.image_content a:hover div {
+		top: -62px
+	}
+
+	div.media div.filter_wrapper {
+		padding-left: 10px
+	}
+
+	div.card div.consensus.tight .user_score_chart .percent .icon {
+		padding-top: 1px;
+		padding-left: 0px
+	}
+
+	form,
+	section.main_content form {
+		padding-left: 10px;
+		padding-right: 10px
+	}
+
+	select {
+		margin-bottom: 10px
+	}
+
+	section.content input[type="submit"].center {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		margin-top: 30px
+	}
+
+	table.changes_v4 tr th:first-child,
+	table.changes_v4 tr td:first-child {
+		padding-left: 10px
+	}
+
+	table.changes_v4 tr th:last-child,
+	table.changes_v4 tr td:last-child {
+		padding-right: 10px
+	}
+
+	table.leaderboard {
+		width: 95%;
+		min-width: initial
+	}
+
+	table.leaderboard td {
+		vertical-align: middle
+	}
+
+	table.leaderboard span.details {
+		display: inline
+	}
+
+	table.leaderboard td span.details p {
+		font-size: 0.9em
+	}
+
+	section.main_content section {
+		width: 100%
+	}
+
+	section.main_content nav {
+		width: 100%;
+		margin-bottom: 30px
+	}
+
+	section.main_content nav>ul {
+		width: 100%
+	}
+
+	section.main_content nav>ul>li>a {
+		width: 100%;
+		height: auto;
+		padding-left: 10px;
+		box-sizing: border-box
+	}
+
+	section.main_content section.content div.app p~ul {
+		margin-left: 0
+	}
+
+	section.main_content section.content div.app>a img {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		margin-top: 20px;
+		width: 144px
+	}
+
+	section.main_content section.content div.details {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 40px;
+		width: 80%;
+		box-sizing: border-box;
+		padding: 0
+	}
+
+	section.main_content section.content div.details h4,
+	section.main_content section.content div.details p,
+	section.main_content section.content div.details h4,
+	section.main_content section.content div.details ul {
+		display: block;
+		text-align: center
+	}
+
+	section.main_content section.content div.details ul {
+		list-style-position: inside;
+		position: relative;
+		top: 0;
+		left: -12px;
+		box-sizing: border-box
+	}
+
+	section.main_content section.content div.details h4 {
+		font-size: 1.2em;
+		margin-top: 14px
+	}
+
+	section.main_content section.content div.details.full {
+		float: left;
+		padding: 4px 0 0 0;
+		width: 714px
+	}
+
+	section.main_content section.content div.details.full h4 a {
+		font-weight: bold
+	}
+
+	section.main_content section.content div.details p:last-of-type {
+		margin-bottom: 4px
+	}
+
+	div.logos {
+		width: 100%;
+		overflow: hidden;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center
+	}
+
+	div.logos div.logo img {
+		max-width: 100%;
+		height: auto
+	}
+
+	section.main_content div.flex {
+		flex-wrap: wrap
+	}
+
+	section.main_content div.flex section.column.main {
+		width: 100%;
+		padding: 0 10px;
+		margin: 0;
+		box-sizing: border-box
+	}
+
+	section.main_content div.flex section.column.main h2,
+	section.main_content div.flex section.column.main p,
+	section.main_content div.flex section.column.main form {
+		padding-left: 0;
+		padding-right: 0
+	}
+
+	section.main_content div.flex section.column.sidebar {
+		width: 100%;
+		padding: 0 10px;
+		box-sizing: border-box
+	}
+
+	section.main_content div.flex section.column.main+section.column.sidebar {
+		margin-top: 40px;
+		margin-bottom: 20px
+	}
+
+	section.main_content div.flex section.column div.card.colored div.top {
+		padding: 60px 16px 0 16px
+	}
+
+	section.main_content div.flex section.column div.card.colored div.bottom {
+		padding: 16px
+	}
+
+	section.main_content.search_results {
+		width: 100%
+	}
+
+	section.main_content.search_results nav {
+		margin-top: 0
+	}
+
+	section.main_content.search_results ul+p {
+		margin-left: 10px;
+		padding-right: 10px
+	}
+
+	div.trending {
+		display: none
+	}
+
+	section.main_content.search_results div.list h2 {
+		padding-bottom: 16px
+	}
+
+	section.main_content.search_results div.item.card {
+		display: block
+	}
+
+	section.main_content.search_results div.item.backdrop.card {
+		width: 100%;
+		border-left-width: 0;
+		border-right-width: 0
+	}
+
+	section.main_content.search_results div.results.flex.results_backdrop_card div.item:nth-child(n+2) {
+		margin-top: 30px
+	}
+
+	section.main_content.search_results div.item.backdrop.card.collection {
+		width: 100%
+	}
+
+	section.main_content.search_results div.item.backdrop div.image_content a {
+		width: 100%
+	}
+
+	section.main_content.search_results div.item.backdrop.card.collection div.image_content a {
+		width: 100%;
+		height: 100%
+	}
+
+	section.main_content.search_results div.item.backdrop p a.title {
+		max-width: 80%
+	}
+
+	section.search_results div.item.profile {
+		padding: 0
+	}
+
+	section.search_results div.item.profile div.image_content {
+		margin-right: 14px
+	}
+
+	section.main_content.search_results div.item.profile p.name {
+		font-size: 1.2em
+	}
+
+	section.search_results div.item.profile div.content p.sub,
+	section.search_results div.item.profile div.content p.sub a {
+		font-size: 1em
+	}
+}
