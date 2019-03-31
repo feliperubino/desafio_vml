@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production"
+    "start": "webpack-dev-server --history-api-fallback --mode development --open",
+    "build": "webpack --history-api-fallback --mode production"
   },
   "keywords": [],
   "author": "",
@@ -29,5 +29,7 @@
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react-router-dom": "^5.0.0"
+  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+
 const displayNone = {
 	display: 'none'
 }

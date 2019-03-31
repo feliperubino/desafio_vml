@@ -3,8 +3,8 @@ Desafio técnico da VML
 > Aplicação desenvolvida com ReactJS para carregar dados da API do The Movie DB.
 
 ## Instalação:
-### Pré-requisitos:
-Os seguintes softwares são necessários para a execução da aplicação:
+### Dependências:
+É necessário instalar o NodeJS para a instalação e execução da aplicação:
 -Node.js: https://nodejs.org/en/
 
 Na pasta raiz do projeto, executar o seguinte comando:

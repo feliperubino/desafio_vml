@@ -35,6 +35,14 @@ module.exports = {
       }
     ]
   },
+  output: {
+	  publicPath: "/"
+  },
+  devServer: {
+    historyApiFallback:{
+		index:"./index.html"
+	},
+  },
   plugins: [
     new HtmlWebPackPlugin({
       template: "./src/index.html",
