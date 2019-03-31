@@ -142,4 +142,4 @@ class Footer extends React.Component {
 }
 
 export default Footer;
-ReactDOM.render(<Footer />, document.getElementById("footer"));
+//ReactDOM.render(<Footer />, document.getElementById("footer"));

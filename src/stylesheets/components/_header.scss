@@ -4463,7 +4463,7 @@ section.main_content h2 span.glyphicons.breadcrumb {
 }
 
 section.main_content section {
-	width: 740px;
+	/*width: 740px;*/
 	float: left;
 	box-sizing: border-box
 }
@@ -9237,7 +9237,11 @@ section.main_content.search_results div.network div.results ul li img {
 .k-panel {
 	color: #292b2c;
 	background-color: #ffffff;
-	border-color: rgba(33, 37, 41, 0.125)
+	border-color: rgba(33, 37, 41, 0.125);
+}
+
+.k-widget.k-autoComplete.k-header.k-autoComplete-clearable.k-state-default{
+	border:none;
 }
 
 .k-content,

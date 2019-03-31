@@ -16,5 +16,5 @@ ReactDOM.render((
   <BrowserRouter>
     <Router />
   </BrowserRouter>
-), document.getElementById('main_content'))
+), document.getElementById('content'))
 

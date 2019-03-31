@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import { NavLink } from 'react-router-dom';
+
 
 const displayNone = {
 	display: 'none'
@@ -56,12 +58,12 @@ class Header extends React.Component {
 						<div className="left">
 							<ul className="primary">
 							   <li className="logo">
-								  <a href="/">
-								  <img src="https://www.themoviedb.org/assets/2/v4/logos/primary-green-d70eebe18a5eb5b166d5c1ef0796715b8d1a2cbc698f96d311d62f894ae87085.svg" alt="The Movie Database (TMDb)" width="81" height="72" />
-								  </a>
+								  <NavLink to="/">
+									<img src="https://www.themoviedb.org/assets/2/v4/logos/primary-green-d70eebe18a5eb5b166d5c1ef0796715b8d1a2cbc698f96d311d62f894ae87085.svg" alt="The Movie Database (TMDb)" width="81" height="72" />
+								  </NavLink>
 							   </li>
 							   <li>
-								  <a href="/discover">Discover</a>
+								  <NavLink to="/">Discover</NavLink>
 								  <ul className="sub_menu discover hide">
 									 <li><a href="/discover/movie">Movies</a></li>
 									 <li><a href="/discover/tv">TV Shows</a></li>
@@ -247,4 +249,4 @@ class Header extends React.Component {
 }
 
 export default Header;
-ReactDOM.render(<Header />, document.getElementById("header"));
+//ReactDOM.render(<Header />, document.getElementById("header"));

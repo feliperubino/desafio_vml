@@ -119,5 +119,5 @@ class Filtro extends React.Component {
 
 
 export default Filtro;
-ReactDOM.render(<Filtro />, document.getElementById("filtro"));
+//ReactDOM.render(<Filtro />, document.getElementById("filtro"));
 
