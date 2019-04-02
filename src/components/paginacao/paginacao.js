@@ -59,11 +59,18 @@ class Paginacao extends React.Component {
 	
 	const prevPage = Number(paginaAtual) - 1;
 	const nextPage = Number(paginaAtual) + 1;
+	
+	let pageType = window.location.pathname.split('/');
+	pageType = pageType[1];
+	
+	if(pageType == ""){
+		pageType = "movie";
+	}
 
     return (
 		<div class="pagination">
 			{paginaAtual != "1" ? (
-				<a class="previous_page" rel="prev" href={`/?page=${prevPage}`}>← Previous</a>	
+				<a class="previous_page" rel="prev" href={`/${pageType}?page=${prevPage}`}>← Previous</a>	
 			) : (
 				<span class="previous_page disabled">← Previous</span>
 			)}
@@ -71,7 +78,7 @@ class Paginacao extends React.Component {
 			{paginaAtual == totalPaginas ? (
 				<span class="next_page disabled">Next →</span>
 			) : (
-				<a class="next_page" rel="prev" href={`/?page=${nextPage}`}>Next →</a>	
+				<a class="next_page" rel="prev" href={`/${pageType}?page=${nextPage}`}>Next →</a>	
 			)}
 		</div>
     );

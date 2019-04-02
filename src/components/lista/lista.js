@@ -41,8 +41,15 @@ class Lista extends React.Component {
   }
 
   fetchMovies(isDesktop, page) {
+	let pageType = window.location.pathname.split('/');
+	pageType = pageType[1];
+	
+	if(pageType == ""){
+		pageType = "movie";
+	}
+	  	  
 	let apiKey = "19fcabf9fa0e8b4b4f3f3e417322d797";
-	fetch('https://api.themoviedb.org/3/discover/movie?api_key=' +apiKey + "&page=" +page)
+	fetch('https://api.themoviedb.org/3/discover/'+pageType+'?api_key=' +apiKey + "&page=" +page)
 	.then(results => {
 		return results.json();
 	}).then(data => {
@@ -53,7 +60,7 @@ class Lista extends React.Component {
 				{isDesktop ? (
 					<div className="item poster card" key={movie.id}>
 						<div className="image_content">
-							<NavLink to={`movie/${movie.id}`}>
+							<NavLink to={`${pageType}/${movie.id}`}>
 								<img className="poster fade lazyautosizes lazyloaded" data-sizes="auto" src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2/${movie.poster_path}`} />
 								
 								<div className="meta" data-role="tooltip">
@@ -84,7 +91,7 @@ class Lista extends React.Component {
 							  </div>
 							</div>
 							<div className="flex">
-							  <NavLink to={`movie/${movie.id}`}>
+							  <NavLink to={`${pageType}/${movie.id}`}>
 								{movie.title}
 							  </NavLink>
 							  <span>December 21, 2018</span>
@@ -97,7 +104,7 @@ class Lista extends React.Component {
 				) : (
 					<div className="item backdrop card" key={movie.id}>
 						<div className="image_content">
-							<NavLink to={`movie/${movie.id}`}>
+							<NavLink to={`${pageType}/${movie.id}`}>
 								<img className="backdrop fade lazyautosizes lazyloaded" data-sizes="auto" src={`https://image.tmdb.org/t/p/w500_and_h282_face/${movie.backdrop_path}`} />
 								
 								<div className="meta" data-role="tooltip">
@@ -127,7 +134,7 @@ class Lista extends React.Component {
 							  </div>
 							</div>
 							<div className="flex">
-							  <NavLink to={`movie/${movie.id}`}>{movie.title}</NavLink>
+							  <NavLink to={`${pageType}/${movie.id}`}>{movie.title}</NavLink>
 							  <span>December 21, 2018</span>
 							</div>
 						  </div>

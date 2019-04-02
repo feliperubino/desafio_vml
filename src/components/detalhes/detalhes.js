@@ -43,10 +43,17 @@ class Detalhes extends React.Component {
   }
 
   fetchMovies() {
+	let pageType = window.location.pathname.split('/');
+	pageType = pageType[1];
+	
+	if(pageType == ""){
+		pageType = "movie";
+	} 
+	 
 	let apiKey = "19fcabf9fa0e8b4b4f3f3e417322d797";
 	let movieId = window.location.pathname.split('/');
 	movieId = movieId[2];
-	fetch('https://api.themoviedb.org/3/movie/'+movieId+'?api_key=' +apiKey + "&language=en-US")
+	fetch('https://api.themoviedb.org/3/'+pageType+'/'+movieId+'?api_key=' +apiKey + "&language=en-US")
 	.then(results => {
 		return results.json();
 	}).then(data => {
@@ -59,7 +66,16 @@ class Detalhes extends React.Component {
 	let apiKey = "19fcabf9fa0e8b4b4f3f3e417322d797";
 	let movieId = window.location.pathname.split('/');
 	movieId = movieId[2];
-	fetch('https://api.themoviedb.org/3/movie/'+movieId+'/credits?api_key=' +apiKey + "")
+	
+	let pageType = window.location.pathname.split('/');
+	pageType = pageType[1];
+	
+	if(pageType == ""){
+		pageType = "movie";
+	}
+	  	
+	
+	fetch('https://api.themoviedb.org/3/'+pageType+'/'+movieId+'/credits?api_key=' +apiKey + "")
 	.then(results => {
 		return results.json();
 	}).then(data => {
@@ -81,6 +97,13 @@ class Detalhes extends React.Component {
   render() {
     const isDesktop = this.state.isDesktop;
 	const movie = this.state.movie;
+	
+	let pageType = window.location.pathname.split('/');
+	pageType = pageType[1];
+	
+	if(pageType == ""){
+		pageType = "movie";
+	}
 
     return (
 		<section className="inner_content movie_content backdrop poster">
