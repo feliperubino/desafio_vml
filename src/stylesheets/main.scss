@@ -1,6 +1,6 @@
-@import 'components/header';
-@import 'components/header.mobile';
-@import 'components/filtro';
-@import 'components/detalhes';
-@import 'components/detalhes.desktop';
-@import 'components/detalhes.mobile';
+@import './src/components/header/header';
+@import './src/components/header/header.mobile';
+@import './src/components/filtro/filtro';
+@import './src/components/detalhes/detalhes';
+@import './src/components/detalhes/detalhes.desktop';
+@import './src/components/detalhes/detalhes.mobile';
